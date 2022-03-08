@@ -1,10 +1,11 @@
 {% include head.html %}
 {% include bar.html %}
 <h1>Google Search</h1>
-<form action="https://www.google.com/search">
+<form action="https://www.google.com/search" method="GET" role="search">
   <input type="text" name="q">
   <br>
-  <input class="btnS" type="submit" value="Google Search">
+  <input class="btnS" type="submit" name="btnK" value="Google Search">
+  <input class="btnS" type="submit" name="btnI" value="I'm Feeling Lucky">
 </form>
 {{content}}
 {% include end.html %}
