@@ -4,13 +4,17 @@ title: Advance Search
 ---
 <h1>Advanced Search</h1>
 <form action="https://www.google.com/advanced_search">
-  <input type="text" name="as_q" placeholder="all these words">
+  <label for="all">All these words</label>
+  <input id="all" type="text" name="as_q" placeholder="all these words">
   <br>
-  <input type="text" name="as_epq" placeholder="these exact words or phrase">
+  <label for="exact">Exact words or Phrase. Make sure to put in quotes</label>
+  <input id="exact" type="text" name="as_epq" placeholder="these exact words or phrase">
   <br>
-  <input type="text" name="as_oq" placeholder="any words">
+  <label for="any">Any of these words. Put OR inbetween words</label>
+  <input id="any" type="text" name="as_oq" placeholder="any words">
   <br>
-  <input type="text" name="as_eq" placeholder="none of these words">
+  <label for="none">Does not have these words. Put - before word</label>
+  <input id="none" type="text" name="as_eq" placeholder="none of these words">
   <br>
   <input type="submit" value="Google Search">
 </form>
